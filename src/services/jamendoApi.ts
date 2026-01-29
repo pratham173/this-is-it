@@ -1,4 +1,5 @@
-const JAMENDO_CLIENT_ID = 'your_jamendo_client_id';
+// Using a demo client ID - users should replace with their own from https://developer.jamendo.com
+const JAMENDO_CLIENT_ID = '56d30c95';
 const JAMENDO_API_BASE = 'https://api.jamendo.com/v3.0';
 
 export interface JamendoApiParams {
