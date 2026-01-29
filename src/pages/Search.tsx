@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useJamendoAPI } from '../hooks/useJamendoAPI';
 import { Track } from '../types';
 import { SearchBar } from '../components/Library/SearchBar';

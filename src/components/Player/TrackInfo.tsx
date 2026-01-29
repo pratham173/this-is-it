@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Music } from 'lucide-react';
 import { usePlayer } from '../../context/PlayerContext';
 

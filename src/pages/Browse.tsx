@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useJamendoAPI } from '../hooks/useJamendoAPI';
 import { Track } from '../types';
 import { TrackList } from '../components/Library/TrackList';
 import { Button } from '../components/ui/Button';
-import { clsx } from 'clsx';
 
 const GENRES = [
   { id: 'pop', name: 'Pop' },

@@ -1,6 +1,5 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Search, Music, Library, Settings, Upload } from 'lucide-react';
+import { Home, Search, Music, Library, Settings } from 'lucide-react';
 import { clsx } from 'clsx';
 
 interface SidebarProps {

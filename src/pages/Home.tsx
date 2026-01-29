@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useJamendoAPI } from '../hooks/useJamendoAPI';
 import { Track } from '../types';
 import { TrackList } from '../components/Library/TrackList';
-import { Card } from '../components/ui/Card';
-import { CardSkeleton } from '../components/ui/Skeleton';
 
 export function Home() {
   const { getTrendingTracks, getNewReleases, loading } = useJamendoAPI();

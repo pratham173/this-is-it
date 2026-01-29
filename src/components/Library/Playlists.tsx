@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Music, Trash2, Edit2 } from 'lucide-react';
+import { Plus, Music, Trash2 } from 'lucide-react';
 import { useLibrary } from '../../context/LibraryContext';
 import { useToast } from '../../context/ToastContext';
 import { Playlist } from '../../types';
@@ -9,7 +9,7 @@ import { Modal } from '../ui/Modal';
 import { TrackList } from './TrackList';
 
 export function Playlists() {
-  const { playlists, createPlaylist, deletePlaylist, updatePlaylist } = useLibrary();
+  const { playlists, createPlaylist, deletePlaylist } = useLibrary();
   const { showToast } = useToast();
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [selectedPlaylist, setSelectedPlaylist] = useState<Playlist | null>(null);

@@ -1,30 +1,14 @@
-import React, { useState } from 'react';
-import { Upload, Music, Trash2 } from 'lucide-react';
+import { useState } from 'react';
+import { Upload } from 'lucide-react';
 import { useLibrary } from '../../context/LibraryContext';
-import { useToast } from '../../context/ToastContext';
 import { TrackList } from './TrackList';
 import { Button } from '../ui/Button';
 import { UploadModal } from '../Upload/UploadModal';
 
 export function MyLibrary() {
-  const { uploadedTracks, downloadedTracks, deleteUploadedTrack, deleteDownloadedTrack } = useLibrary();
-  const { showToast } = useToast();
+  const { uploadedTracks, downloadedTracks } = useLibrary();
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'uploads' | 'downloads'>('uploads');
-
-  const handleDeleteUpload = async (id: string) => {
-    if (confirm('Are you sure you want to delete this track?')) {
-      await deleteUploadedTrack(id);
-      showToast('Track deleted', 'success');
-    }
-  };
-
-  const handleDeleteDownload = async (id: string) => {
-    if (confirm('Are you sure you want to delete this downloaded track?')) {
-      await deleteDownloadedTrack(id);
-      showToast('Download removed', 'success');
-    }
-  };
 
   return (
     <div className="space-y-6">

@@ -7,10 +7,8 @@ import { initDB } from './services/offlineStorage';
 // Initialize IndexedDB
 initDB().catch(console.error);
 
-// Register service worker
-if (import.meta.env.PROD) {
-  registerServiceWorker().catch(console.error);
-}
+// Register service worker (only in production)
+registerServiceWorker().catch(console.error);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

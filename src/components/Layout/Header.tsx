@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Music2, Search, Home, Library, Settings, Menu, X } from 'lucide-react';
+import { Music2, Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { ThemeToggle } from '../ui/ThemeToggle';
 import { useOnlineStatus } from '../../hooks/useOnlineStatus';

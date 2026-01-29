@@ -1,5 +1,5 @@
 import { openDB, DBSchema, IDBPDatabase } from 'idb';
-import { Track, Playlist, DownloadedTrack, UploadedTrack, ThemeConfig } from '../types';
+import { Playlist, DownloadedTrack, UploadedTrack } from '../types';
 
 interface HarmonyDB extends DBSchema {
   tracks: {

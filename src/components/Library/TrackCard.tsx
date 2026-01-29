@@ -1,5 +1,5 @@
 import React from 'react';
-import { Music, Play, Download, MoreVertical } from 'lucide-react';
+import { Music, Play, Download } from 'lucide-react';
 import { Track } from '../../types';
 import { formatTime } from '../../utils/formatTime';
 import { usePlayer } from '../../context/PlayerContext';
