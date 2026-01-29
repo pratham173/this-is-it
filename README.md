@@ -67,7 +67,10 @@ cd this-is-it
 npm install
 ```
 
-3. Get a Jamendo API key:
+3. **Jamendo API Key** (Optional but recommended):
+   
+   The app comes with a demo API key (`56d30c95`) that works out of the box. However, for production use or heavy usage, you should get your own free API key:
+   
    - Visit https://developer.jamendo.com
    - Sign up for a free account
    - Create a new application to get your client ID
@@ -75,6 +78,8 @@ npm install
      ```typescript
      const JAMENDO_CLIENT_ID = 'your_actual_client_id_here';
      ```
+   
+   **Note:** The demo key has rate limits and is shared among users. For the best experience and higher API limits, use your own free API key.
 
 4. Start the development server:
 ```bash
