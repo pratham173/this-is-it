@@ -1,4 +1,6 @@
-const JAMENDO_CLIENT_ID = 'your_jamendo_client_id';
+// Use environment variable if available, otherwise fall back to demo client ID
+// Set VITE_JAMENDO_CLIENT_ID in .env file for custom API key
+const JAMENDO_CLIENT_ID = import.meta.env.VITE_JAMENDO_CLIENT_ID || '56d30c95';
 const JAMENDO_API_BASE = 'https://api.jamendo.com/v3.0';
 
 export interface JamendoApiParams {
